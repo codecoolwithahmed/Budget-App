@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.wrapper {
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 1em auto;
+}
+
+.container {
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+.sub-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper h3 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.3em;
+    color: #ffffff;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(17, 25, 40, 0.32);
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.container input:focus {
+    border-color: #587ef4;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.total-amount-container,
+.user-amount-container {
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(17, 25, 40, 0.32);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.total-amount-container:hover,
+.user-amount-container:hover {
+    backdrop-filter: blur(4px) saturate(105%);
+    -webkit-backdrop-filter: blur(4px) saturate(105%);
+    background-color: rgba(17, 25, 40, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.output-container {
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    margin: 2em 0;
+    padding: 1.2em;
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(88, 126, 244, 0.80);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.output-container p {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.output-container span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.submit {
+    font-size: 1em;
+    margin-top: 0.8em;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(88, 126, 244, 0.80);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.submit:hover {
+    backdrop-filter: blur(4px) saturate(105%);
+    -webkit-backdrop-filter: blur(4px) saturate(105%);
+    background-color: rgba(88, 126, 244, 0.57);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.list {
+    padding: 1.8em 1.2em;
+    border-radius: 0.6em;
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(17, 25, 40, 0.32);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.list:hover {
+    backdrop-filter: blur(4px) saturate(105%);
+    -webkit-backdrop-filter: blur(4px) saturate(105%);
+    background-color: rgba(17, 25, 40, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.sublist-content {
+    width: 95%;
+    border-left: 0.3em solid #587ef4;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.product {
+    font-weight: 500;
+    color: #adacac;
+}
+
+.amount {
+    color: #adacac;
+    margin-left: 20%;
+}
+
+.icons-container {
+    width: 5em;
+    margin: 1.2em;
+    align-items: center;
+}
+
+.product-title {
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    color: #ff465a;
+}
+
+.edit {
+    margin-left: auto;
+}
+
+.edit,
+.delete {
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: #adacac;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        font-size: 14px;
+    }
+
+    .sub-container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}
+
+.list-container {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.list-container div {
+
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(88, 126, 244, 0.40);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(88, 126, 244, 0.80);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    backdrop-filter: blur(3px) saturate(147%);
+    -webkit-backdrop-filter: blur(3px) saturate(147%);
+    background-color: rgba(88, 126, 244, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
